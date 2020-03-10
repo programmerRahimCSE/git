@@ -19,6 +19,9 @@ class AgeMiddleware
         if ($request->age <=200) {
            return redirect('home');
         }
+         if ($request->age <=200) {
+           return redirect('logout');
+        }
 
         return $next($request);
     }
